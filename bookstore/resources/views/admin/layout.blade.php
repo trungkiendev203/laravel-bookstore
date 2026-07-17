@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Admin Dashboard - Arsha')</title>
+    <title>@yield('title', 'Admin Dashboard - Datle')</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +101,7 @@
             <div class="px-4 mb-4 text-center">
                 <a href="{{ route('home') }}" class="d-flex align-items-center justify-content-center text-decoration-none">
                     <i class="bi bi-book-half text-primary fs-3 me-2"></i>
-                    <span class="fw-bold fs-5 text-dark">Arsha Admin</span>
+                    <span class="fw-bold fs-5 text-dark">Datle Admin</span>
                 </a>
             </div>
             

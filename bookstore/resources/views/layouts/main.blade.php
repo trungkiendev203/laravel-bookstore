@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Arsha Bookstore')</title>
+    <title>@yield('title', 'Datle Bookstore')</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,7 +120,7 @@
             <nav class="navbar navbar-expand-lg navbar-light p-0">
                 <a class="navbar-brand d-flex align-items-center" href="{{ route('home') }}">
                     <i class="bi bi-book-half text-orange fs-2 me-2"></i>
-                    <span class="fw-bold fs-4 text-orange">Arsha Shop</span>
+                    <span class="fw-bold fs-4 text-orange">Datle Shop</span>
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -244,12 +244,12 @@
                 <div class="col-lg-4 col-md-6">
                     <a class="d-flex align-items-center text-decoration-none mb-3" href="{{ route('home') }}">
                         <i class="bi bi-book-half text-orange fs-2 me-2"></i>
-                        <span class="fw-bold fs-4 text-orange">Arsha Shop</span>
+                        <span class="fw-bold fs-4 text-orange">Datle Shop</span>
                     </a>
                     <p class="text-muted small">Cửa hàng truyện tranh hàng đầu Việt Nam. Cung cấp hàng ngàn đầu sách hot với chất lượng tuyệt hảo và dịch vụ giao hàng nhanh chóng.</p>
                     <p class="text-muted small mb-1"><i class="bi bi-geo-alt-fill text-orange me-2"></i> 123 Đường Láng, Đống Đa, Hà Nội</p>
                     <p class="text-muted small mb-1"><i class="bi bi-telephone-fill text-orange me-2"></i> 090 909 0909</p>
-                    <p class="text-muted small"><i class="bi bi-envelope-fill text-orange me-2"></i> support@arshashop.vn</p>
+                    <p class="text-muted small"><i class="bi bi-envelope-fill text-orange me-2"></i> support@datleshop.vn</p>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h6 class="fw-bold text-uppercase mb-3">Danh Mục</h6>
@@ -280,7 +280,7 @@
             </div>
             <hr class="my-4 text-muted">
             <div class="text-center">
-                <p class="text-muted small mb-0">&copy; 2026 Arsha Bookstore. Thiết kế và phát triển bởi AI Assistant. Dành riêng cho trải nghiệm mua sắm hoàn hảo.</p>
+                <p class="text-muted small mb-0">&copy; 2026 Datle Bookstore. Thiết kế và phát triển bởi AI Assistant. Dành riêng cho trải nghiệm mua sắm hoàn hảo.</p>
             </div>
         </div>
     </footer>
