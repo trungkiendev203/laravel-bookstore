@@ -5,9 +5,16 @@
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.8.0"
+    },
+    "api/test.php": {
+      "runtime": "vercel-php@0.8.0"
     }
   },
   "routes": [
+    {
+      "src": "/test",
+      "dest": "/api/test.php"
+    },
     {
       "src": "/build/(.*)",
       "dest": "/build/$1"
