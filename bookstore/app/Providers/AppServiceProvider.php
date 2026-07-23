@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Artisan;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // On Vercel: auto-create and seed SQLite database in /tmp on first request
+        if (env('VERCEL') && !file_exists('/tmp/database.sqlite')) {
+            touch('/tmp/database.sqlite');
+            Artisan::call('migrate', ['--force' => true]);
+            Artisan::call('db:seed', ['--force' => true]);
+        }
     }
 }

@@ -35,8 +35,8 @@ return [
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),
-            'database' => file_exists('/var/task/user/public/database.sqlite')
-                ? '/var/task/user/public/database.sqlite'
+            'database' => env('VERCEL')
+                ? '/tmp/database.sqlite'
                 : env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),

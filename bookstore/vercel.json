@@ -2,7 +2,6 @@
   "version": 2,
   "framework": null,
   "outputDirectory": "public",
-  "buildCommand": "npm run build && touch public/database.sqlite && DB_DATABASE=public/database.sqlite php artisan migrate --force --seed",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.8.0"
@@ -12,7 +11,6 @@
     }
   },
   "env": {
-    "DB_DATABASE": "/var/task/user/public/database.sqlite",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
@@ -24,10 +22,6 @@
     "LOG_CHANNEL": "stderr"
   },
   "routes": [
-    {
-      "src": "/database.sqlite",
-      "status": 404
-    },
     {
       "src": "/test",
       "dest": "/api/test.php"
