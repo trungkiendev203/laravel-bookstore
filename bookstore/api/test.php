@@ -17,6 +17,10 @@ try {
     $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
     echo "Kernel resolved.\n";
     
+    echo "Bootstrapping application...\n";
+    $kernel->bootstrap();
+    echo "Application bootstrapped successfully!\n";
+    
     echo "Attempting to resolve view service...\n";
     if ($app->bound('view')) {
         echo "View service is bound!\n";
