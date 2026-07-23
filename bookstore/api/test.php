@@ -6,13 +6,14 @@ error_reporting(E_ALL);
 
 echo "PHP Version: " . PHP_VERSION . "\n";
 
+use Illuminate\Http\Request;
+
 try {
     echo "Booting Laravel...\n";
     require __DIR__ . '/../vendor/autoload.php';
     $app = require_once __DIR__ . '/../bootstrap/app.php';
     
     // Tạo request giả lập
-    use Illuminate\Http\Request;
     $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
     echo "Kernel resolved.\n";
     
